@@ -1,0 +1,259 @@
+/* Cascading Stylesheet */
+
+header {
+  padding-top: 70px;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #003c81;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 2rem;
+  z-index: 999;
+}
+
+header.hide {
+  transform: translateY(-80px);
+}
+
+.avatar {
+  position: left;
+  display: flex;
+  align-items: left;
+  margin-left: 20px;
+}
+
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar span {
+  font-size: 1.2rem;
+}
+
+.NomeEslogan {
+  font-family: Chalkduster, fantasy;
+  text-align: center;
+}
+
+.NomeEslogan h1 {
+  font-family: Snell Roundhand, cursive;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.NomeEslogan p {
+  font-size: 1rem;
+  margin: 0;
+  color: #e5ff00;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--pink);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --blue: hsl(242, 100%, 50%);
+  --red: hsl(0, 71%, 19%);
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #7ea0ff;
+}
+
+main {
+  position: relative;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+#userLink:hover {
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(97, 0, 0),
+    rgb(255, 0, 0),
+    rgb(88, 0, 0)
+  );
+}
+
+
+.PIN {
+  font-family: long island;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.PIN p{
+  font-family: "Bookman Old Style";
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #ffffff;
+  word-wrap: break-word;
+  margin: 30px;
+}
+
+.PIN h2 {
+  margin: 0 20%;
+  padding: 8px 0;
+  color: #8b0000;
+  text-align: center;
+  margin: 30px;
+  font-size: 5rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #003c81;;
+  /*background-color: #8b0000;*/
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+  margin-right: 0;
+}
+.footer-menu a {
+  color: #f5ff85;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+  color: #faffb1;
+}
+
+.wrapper {
+  min-height: calc(100vh - 60px); /* 60px é a altura do footer */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+  
+  @media screen and (max-height: 700px) {
+    footer {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  select {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    float: right;
+    font-size: 16px;
+    color: #000000;
+    background-color: #0059ff;
+    border-radius: 7px;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    appearance: none;
+    
+  }
+  
+  select:hover {
+    border-style: solid;
+    border-color: #8b0000;
+    transition: 0.1s;
+    border-bottom-color: #8b0000;
+    border-radius: 15%;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  #userLink:hover {
+    border-radius: 10px;
+    background: linear-gradient(
+      to right,
+      rgb(13, 5, 103),
+      rgb(255, 0, 0),
+      rgb(255, 255, 0)
+    );
+  }
+  .rede:hover {
+    border-style: solid;
+    border-color: #e00d0d;
+    border-bottom-color: #e00d0d;
+    border-radius: 20%;
+  }
