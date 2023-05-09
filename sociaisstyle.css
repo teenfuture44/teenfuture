@@ -240,7 +240,7 @@ main {
   .ImgDecorativa img {
     padding-bottom: 10rem;
     position: absolute;
-    top: 28rem;
+    top: 50%;
     left: -1;
     transform: translateY(-50%);
     width: 70%;
@@ -266,8 +266,6 @@ main {
     border-bottom-color: #e00d0d;
     border-radius: 20%;
   }
-  
-  
   
 footer {
   position: fixed;
