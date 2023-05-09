@@ -132,6 +132,8 @@ main {
 }
 
 .eqp {
+  padding-top:5rem;
+  padding-bottom:5erm;
   font-family: long island;
   position: absolute;
   top: 80%;
@@ -155,7 +157,7 @@ main {
   color: #8b0000;
   text-align: center;
   margin: 30px;
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 
@@ -232,7 +234,7 @@ footer {
     
   }
   
-  select:hover {
+    select:hover {
     border-style: solid;
     border-color: #8b0000;
     transition: 0.1s;
