@@ -94,9 +94,7 @@ section {
   margin: 0 auto;
 }
 
-body { 
-  padding-top:5;
-  padding-bottom:10;
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -131,140 +129,25 @@ main {
   );
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: #003c81;;
-  /*background-color: #8b0000;*/
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  font-size: 1rem;
-}
+  
+  @media screen and (max-height: 700px) {
+    footer {
+      position: relative;
+      z-index: 1;
+    }
+    .MidiasSociais h4{
+      position: absolute;
+      top: 60%;
+      left: 0;
+      transform: translateY(-50%);
+      text-align: center;
+    }
 
-.footer-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.footer-menu li {
-  margin-right: 20px;
-}
-
-.footer-menu li:last-child {
-  margin-right: 0;
-}
-.footer-menu a {
-  color: #f5ff85;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.footer-menu a:hover {
-  color: #faffb1;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+    .ImgDecorativa{
+      width: 10
+      0%;
+    }
   }
-  
-  .wrapper {
-    padding-bottom: 5px; /* ou altura do footer */
-  }
-  
- /* Estilos para telas menores que 768 pixels */
-@media (max-width: 768px) {
-  .MidiasSociais img {
-    right: 50px;
-  }
-  
-  .MidiasSociais h4 {
-    left: 50px;
-  }
-  
-  .RedesSociais {
-    width: 100%;
-    right: 0;
-    left: 0;
-  }
-  
-  .rede {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .rede img {
-    width: 30px;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  .rede h3,
-  .rede h5,
-  .rede h6,
-  .rede h7 {
-    font-size: 16px;
-  }
-  
-  .ImgDecorativa img {
-    top: 20%;
-    left: 0;
-    width: 100%;
-    transform: none;
-  }
-}
-
-/* Estilos para telas maiores ou iguais a 768 pixels */
-@media (min-width: 768px) {
-  .MidiasSociais img {
-    right: 350px;
-  }
-  
-  .MidiasSociais h4 {
-    left: 0;
-  }
-  
-  .RedesSociais {
-    width: 50%;
-  }
-  
-  .rede {
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .rede img {
-    width: 50px;
-    margin-right: 10px;
-  }
-  
-  .rede h3,
-  .rede h5,
-  .rede h6,
-  .rede h7 {
-    font-size: 20px;
-  }
-  
-  .ImgDecorativa img {
-    top: 30%;
-    left: -1;
-    width: 60%;
-    transform: scale(0.5);
-  }
-}
-
   select {
     position: absolute;
     top: 50px;
@@ -306,8 +189,6 @@ footer {
   }
   
   .MidiasSociais h4 {
-    padding-top:5;
-    padding-bottom:10;
     font-family: Chalkduster, fantasy;
     position: absolute;
     top: 35%;
@@ -320,14 +201,13 @@ footer {
     color: #8b0000;
     text-align: center;
     margin: 20px;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .RedesSociais {
-    padding-top:5;
-    padding-bottom:10;
+    top: 75%;
     position: absolute;
-    top: 90%;
+    bottom: 10px;
     right: 0;
     transform: translateY(-50%);
     text-align: center;
@@ -337,10 +217,13 @@ footer {
     align-items: center;
     width: 50%;
   }
-  
+
+  #content {
+    margin-top: 80px; /* valor de acordo com o tamanho da .RedesSociais */
+}
+
   .rede {
-    padding-top:5;
-    padding-bottom:10;
+    top: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -360,16 +243,17 @@ footer {
   .rede h5,
   .rede h6,
   .rede h7 {
-    padding-top:5;
-    padding-bottom:10;
+    padding-top: 5;
+    margin-top: 8rem;
     margin: 0;
     font-size: 20px;
     display: inline-block; /* adicionado */
   }
   
   .ImgDecorativa img {
+    padding-bottom: 10rem;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: -1;
     transform: translateY(-50%);
     width: 60%;
@@ -396,3 +280,52 @@ footer {
     border-radius: 20%;
   }
   
+  
+  
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  background-color: #003c81;;
+  /*background-color: #8b0000;*/
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  transition: bottom 0.3s ease-out;
+}
+
+footer.hide {
+  bottom: -50px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-menu li {
+  margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+  margin-right: 0;
+}
+.footer-menu a {
+  color: #f5ff85;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+  color: #faffb1;
+}
+
+  .wrapper {
+    padding-bottom: 5px; /* ou altura do footer */
+  }
