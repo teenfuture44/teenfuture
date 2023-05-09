@@ -164,7 +164,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 0;
   background-color: #003c81;;
   /*background-color: #8b0000;*/
   color: #ffffff;
