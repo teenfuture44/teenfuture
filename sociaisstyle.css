@@ -129,25 +129,6 @@ main {
   );
 }
 
-  
-  @media screen and (max-height: 700px) {
-    footer {
-      position: relative;
-      z-index: 1;
-    }
-    .MidiasSociais h4{
-      position: absolute;
-      top: 60%;
-      left: 0;
-      transform: translateY(-50%);
-      text-align: center;
-    }
-
-    .ImgDecorativa{
-      width: 10
-      0%;
-    }
-  }
   select {
     position: absolute;
     top: 50px;
