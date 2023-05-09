@@ -113,6 +113,8 @@ body {
 }
 
 main {
+  padding-top:5;
+  padding-bottom:10;
   background: url(images/background.svg) no-repeat center/cover;
   width: 100vw;
   min-height: 812px;
