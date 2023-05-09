@@ -131,6 +131,8 @@ main {
 
 
 .PIN {
+  padding-top:5;
+  padding-bottom:10;
   font-family: long island;
   position: absolute;
   top: 70%;
