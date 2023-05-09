@@ -94,7 +94,9 @@ section {
   margin: 0 auto;
 }
 
-body {
+body { 
+  padding-top:5;
+  padding-bottom:10;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -245,6 +247,8 @@ footer {
   }
 
   .RedesSociais {
+    padding-top:5;
+    padding-bottom:10;
     position: absolute;
     top: 90%;
     right: 0;
@@ -258,8 +262,8 @@ footer {
   }
   
   .rede {
-     padding-top:5;
-  padding-bottom:10;
+    padding-top:5;
+    padding-bottom:10;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,6 +283,8 @@ footer {
   .rede h5,
   .rede h6,
   .rede h7 {
+    padding-top:5;
+    padding-bottom:10;
     margin: 0;
     font-size: 20px;
     display: inline-block; /* adicionado */
