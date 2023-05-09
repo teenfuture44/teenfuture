@@ -142,6 +142,8 @@ main {
 }
 
 .TF p {
+    padding-top:5;
+  padding-bottom:10;
   font-family: "Bookman Old Style";
   font-size: 1.2rem;
   text-align: justify;
@@ -151,6 +153,8 @@ main {
 }
 
 .TF h2 {
+    padding-top:5;
+  padding-bottom:10;
   margin: 0 20%;
   padding: 20px 0;
   color: #8b0000;
