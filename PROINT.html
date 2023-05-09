@@ -68,5 +68,18 @@
         }
       }
     </script>
+
+  <script>
+    let prevScrollpos = window.pageYOffset
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('footer').classList.remove('hide')
+  } else {
+    document.querySelector('footer').classList.add('hide')
+  }
+  prevScrollpos = currentScrollPos
+}
+</script>
   </body>
 </html>
