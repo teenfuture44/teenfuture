@@ -227,6 +227,8 @@ footer {
   }
   
   .MidiasSociais h4 {
+    padding-top:5;
+    padding-bottom:10;
     font-family: Chalkduster, fantasy;
     position: absolute;
     top: 35%;
@@ -256,6 +258,8 @@ footer {
   }
   
   .rede {
+     padding-top:5;
+  padding-bottom:10;
     display: flex;
     flex-direction: row;
     align-items: center;
